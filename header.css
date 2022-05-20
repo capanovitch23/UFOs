@@ -1,0 +1,36 @@
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0 3rem 0 3rem;
+    border-radius: 2px;
+    z-index: 99;
+    transition: all .4s ease-in-out;
+}
+
+header:hover{
+    padding-top:1.15rem;
+    padding-bottom:1.15rem;
+    transition: all .4s ease-in-out;
+}
+
+
+#acroButtons{
+    display: flex;
+    padding-left: 2rem;
+}
+#acroButtons a{
+    padding-right: .2rem;
+}
+#headerman{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+header > div > h1{
+    padding-left: 1rem;
+}

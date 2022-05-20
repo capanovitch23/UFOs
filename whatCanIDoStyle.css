@@ -1,0 +1,312 @@
+html{
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: green;
+	background-image: url("images/bkg.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    margin: 0 13.5%;
+    /*border: 5px solid red;*/
+}
+
+#main{
+	border-left-style: none;
+	border-left-width: 7px;
+	border-left-color: green;
+	border-right-style: none;
+	border-right-width: 7px;
+	border-right-color: green;
+    background-color: rgba(255,255,255,.8);
+    backdrop-filter: blur(4px);
+}
+
+#paralax{
+    min-height: 46.875rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+
+
+#center-logo{
+    display:flex;
+    opacity: .75;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+#motto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-size: auto;
+
+}
+#motto h2{
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.05);
+    padding: .75rem;
+}
+
+#basic{
+    display: flex;
+    align-items: center;
+    padding: 0 3rem 0 3rem;
+    background-color: green;
+    justify-content: center;
+}
+
+#parent{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#textBox{
+	
+	border-width: 5px;
+	border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2px;
+}
+
+#textBox > h4{
+    color: green;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0 3rem 0 3rem;
+    border-radius: 2px;
+    z-index: 5;
+    color: green;
+}
+
+a{
+    transition: all .2s ease-in-out;
+}
+
+a:link {
+    text-decoration: none;
+    color: green;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: green;
+}
+
+
+a:hover{
+    animation-fill-mode: forwards;
+    transition: all .2s ease-in-out;
+    color: rgb(111, 223, 111);
+}
+
+header{
+	border-bottom-style: none;
+	border-bottom-width: 8px;
+	border-bottom-color: green;
+	opacity: 1;
+}
+
+.slidecont{
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.slidecontainer{
+    width: 800px;
+    height: 500px;
+}
+.slider{
+	width: 800px;
+	height: 500px;
+    border-radius: 10px;
+	border-width: 5px;
+	border-style: none;
+	border-color: green;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid;
+    border-color: green;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background-color: green;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/*INFSLIDES*/
+.infslidecont{
+    display: flex;
+    justify-content: center;
+}
+
+.infslidecontainer{
+    width: 1600px;
+    height: 250px;
+}
+.infslider{
+	width: 800px;
+	height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.infslides{
+    width: 500%;
+    height: 250px;
+    display: flex;
+}
+
+.infslides input{
+    display: none;
+}
+
+.infslide{
+    width: 10%;
+    transition: 2s;
+}
+.infslides div h2{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.infslides div p{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.infslide img{
+    width: 800px;
+    height: 500px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid;
+    border-color: green;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background-color: green;
+}
+
+
+#radioInf1:checked ~ .first{
+    margin-left: 0;
+}
+#radioInf2:checked ~ .first{
+    margin-left: -10%;
+}
+#radioInf3:checked ~ .first{
+    margin-left: -20%;
+}
+#radioInf4:checked ~ .first{
+    margin-left: -30%;
+}
+#radioInf5:checked ~ .first{
+    margin-left: -40%;
+}
+#radioInf6:checked ~ .first{
+    margin-left: -50%;
+}
+#radioInf7:checked ~ .first{
+    margin-left: -60%;
+}
+#radioInf8:checked ~ .first{
+    margin-left: -70%;
+}
+#radioInf9:checked ~ .first{
+    margin-left: -80%;
+}
+#radioInf10:checked ~ .first{
+    margin-left: -90%;
+}

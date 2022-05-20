@@ -1,0 +1,268 @@
+/*Small Logo in header*/
+#headerlogo{
+    background-color: green;
+    border-radius: 2px;
+    fill: white;
+}
+
+#sq1{
+    filter: drop-shadow(0 0 0.005rem black);
+}
+#sq2{
+    filter: drop-shadow(0 0 0.005rem black);
+}
+#sq3{
+    filter: drop-shadow(0 0 0.005rem black);
+    transform-origin: center;
+    transform-box: fill-box;
+    
+    animation-name: shrink;
+    animation-duration: .5s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+#sq4{
+    filter: drop-shadow(0 0 0.005rem black);
+}
+/*Sq1*/
+
+#sq1 rect{
+    transform: translateX(.75ch) translateY(.75ch);
+}
+#sq1:hover{
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: rotate(45deg) scale(.8);
+    transition: all .2s;
+}
+#sq1{
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all .2s;
+}
+#sq1:hover{
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all .2s;
+}
+#sq1:hover > rect{
+    transition: .2s;
+}
+
+
+
+/*Sq2*/
+
+#sq2 rect{
+    transform: translateX(3.25ch) translateY(.75ch);
+}
+#sq2:hover{
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: rotate(45deg) scale(.8);
+    transition: all .2s;
+}
+#sq2{
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all .2s;
+}
+#sq2:hover{
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all .2s;
+}
+#sq2:hover > rect{
+    transition: .2s;
+}
+
+/*Sq3*/
+
+#sq3 rect{
+    transform: translateX(3.25ch) translateY(3.25ch);
+}
+
+/*sq4*/
+
+#sq4 rect{
+    transform: translateX(.75ch) translateY(3.25ch);
+}
+#sq4:hover{
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: rotate(45deg) scale(.8);
+    transition: all .2s;
+}
+#sq4{
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all .2s;
+}
+#sq4:hover{
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all .2s;
+}
+#sq4:hover > rect{
+    transition: .2s;
+}
+
+
+
+
+/*Big Logo & Center of screen */
+
+#svglogo{
+    width: 25rem;
+}
+
+#logoman{
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+#rect1{
+    transform:translateX(2.5%) translateY(2.5%);
+}
+#rect2{
+   transform: translateX(47.5%) translateY(2.5%);
+}
+#rect3{
+   transform: translateX(2.5%) translateY(47.5%);
+}
+#rect4{
+    transform:translateX(47.5%) translateY(47.5%);
+}
+#rg4{
+    transform-origin: center;
+    transform-box: fill-box;
+    
+    animation-name: shrink;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#rg1 > rect{
+    fill: rgb(255,255,255);
+    transition: all .4s;
+}
+
+#rg1:hover > rect{
+    fill: green;
+    transition: .4s;
+    filter: blur(.1rem);
+}
+
+#rg2 > rect{
+    fill: rgb(255,255,255);
+    transition: all .4s;
+}
+
+#rg2:hover > rect{
+    fill: green;
+    transition: .4s;
+    filter: blur(.1rem);
+}
+
+#rg3 > rect{
+    fill: rgb(255,255,255);
+    transition: all .4s;
+}
+#rg1{
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all .4s;
+}
+#rg1:hover{
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: scale(1.05);
+    transition: all .4s;
+}
+#rg2{
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all .4s;
+}
+#rg2:hover{
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: scale(1.05);
+    transition: all .4s;
+}
+#rg3{
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all .4s;
+}
+#rg3:hover{
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: scale(1.05);
+    transition: all .4s;
+}
+#rg3{
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all .4s;
+}
+#rg3:hover{
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: all .4s;
+}
+#rg3:hover > rect{
+    fill: green;
+    transition: .4s;
+    filter: blur(.1rem);
+}
+
+#rg4 > rect{
+    fill: rgb(255,255,255);
+    transition: all .4s;
+}
+
+#rg4:hover > rect{
+    fill: green;
+    transition: .4s;
+    filter: blur(.1rem);
+}
+
+@keyframes shrink{
+    from{
+        transform: scale(1) rotateZ(0deg);
+    }
+    to{
+        transform: scale(.8) rotateZ(45deg);
+    }
+}
+
+@keyframes unshrink{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0%;
+        size: 0rem;
+    }
+    to{
+        size: 10rem;
+        opacity: 100%;
+    }
+}
+
+@keyframes spin{
+    from{
+        transform: rotateZ(0deg);
+        
+    }
+    to{
+        transform: rotateZ(-45deg);
+    }
+}

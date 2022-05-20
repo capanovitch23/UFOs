@@ -1,3 +1,9 @@
 body{
     background-color: green;
 }
+
+footer{
+    display:flex;
+    position:sticky;
+    margin-top:95%;
+}

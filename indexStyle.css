@@ -1,0 +1,210 @@
+html{
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: linear-gradient(white,lightgreen);
+	background-image: url("images/bkg.jpg");
+    backdrop-filter: blur(2px);
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    margin: 0 -1%;
+    
+}
+
+#main{
+	backdrop-filter: blur(6px);
+    background-color: rgba(0,128,0,.1);
+    max-width: 100vw;
+}
+
+#paralax{
+    
+    min-height: 46.875rem; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+
+#center-logo{
+    display:flex;
+    opacity: .75;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+#binkle{
+    filter: drop-shadow(.5rem .5rem 1rem black);
+}
+
+#motto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    background-size: auto;
+
+}
+#motto h2{
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.05);
+    padding: .45rem;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#basic{
+    display: flex;
+    align-items: center;
+    padding: 0 3rem 0 3rem;
+    background-color: white;
+    justify-content: center;
+    color: white;
+    opacity: .5;
+}
+
+#parent{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#container{
+    justify-items: center;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); /*auto-fill is the ducktape holding this proj togeather rn*/
+    font-family: 'Copperplate Gothic';
+}
+
+@media screen and (max-width: 1200px) {
+    #container{   
+        grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #container{   
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+}
+
+
+#container > button{
+    background-image: white;
+    color: black;
+    border: 5px solid rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 2px;
+    transition: .4s ease-out;
+    opacity: .85;
+}
+
+#container > button:hover{
+    background-color: green;
+    color: white;
+    padding: 2rem;
+    border-radius: 2px;
+    opacity: 1;
+    transition: .1s;
+}
+
+#container > button > h3{
+    transition: .3s;
+}
+
+#container > button:hover > h3{
+    text-decoration: bold;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+
+
+/* 
+#container > button:hover:nth-child(1) {
+    background: red;
+}
+
+#container > button:hover:nth-child(2) {
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#container > button:hover:nth-child(3) {
+    background: red;
+}
+*/
+
+#container > button:active{
+    background-color: white;
+    color: white;
+    border: 5px solid black;
+    padding: 2rem;
+    border-radius: 2px;
+    transition: 1ms;
+}
+
+#backgroundBlur{
+    backdrop-filter: blur(6px);
+}
+
+#textBox{
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 2px;
+}
+
+#textBox > h4{
+    color: green;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0 3rem 0 3rem;
+    border-radius: 2px;
+    z-index: 5;
+    color: green;
+}
+
+a{
+    transition: all .2s ease-in-out;
+}
+
+a:link {
+    text-decoration: none;
+    color: green;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: green;
+}
+
+a:hover{
+    animation-fill-mode: forwards;
+    transition: all .2s ease-in-out;
+    color: rgb(111, 223, 111);
+}
+
+@keyframes textHover{
+    0% {color: green;}
+    50% {}
+    100% {
+        color: rgb(0, 0, 0);
+    }
+}
+
